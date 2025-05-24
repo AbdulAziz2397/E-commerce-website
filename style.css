@@ -575,7 +575,7 @@ footer .copyright {
   font-weight: 600;
 }
 
-/* Single Product */
+/* le Product */
 #prodetails {
   display: flex;
   margin-top: 20px;
@@ -1253,5 +1253,116 @@ footer .copyright {
   #subtotal {
     width: 100%;
     padding: 20px;
+  }
+}
+
+
+/* ==== Input Fields ==== */
+
+#form {
+  background: #E3E6F3;
+  width: 100%;
+  max-width: 860px;
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+#form h2 {
+  font-size: 32px;
+  color: #222;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.inputDefineText {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.steric {
+  color: red;
+  margin-left: 4px;
+}
+
+/* ==== Input Fields ==== */
+#form input[type="text"],
+#form input[type="number"],
+#form select,
+#form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #222;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #fefefe;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+#form input:focus,
+#form select:focus,
+#form textarea:focus {
+  outline: none;
+  border-color: #222;
+  box-shadow: 0 0 6px rgba(106, 76, 147, 0.3);
+}
+
+/* ==== File Upload Button ==== */
+#proImg {
+  display: none;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  background: #222;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 20px;
+}
+
+.custom-file-upload:hover,
+#uploadBtn:hover {
+  background: #222;
+}
+
+/* ==== Textarea Styling ==== */
+#form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* ==== Submit Button ==== */
+#uploadBtn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: #222;
+  color: #fff;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+/* ==== Responsive Form Design ==== */
+@media (max-width: 600px) {
+  #form {
+    padding: 25px;
+  }
+
+  #form h2 {
+    font-size: 26px;
   }
 }

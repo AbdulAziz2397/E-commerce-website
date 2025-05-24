@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Listing Form</title>
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo.png" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="listing-form.html">list Product</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="form">
+        <h2>List a Product</h2>
+        <div>
+            <label class="inputDefineText" for="proName">Enter product name: <span class="steric">*</span></label>
+            <input type="text" required name="proName" id="proName" placeholder="Product name">
+        </div>
+
+        <div>
+            <label class="inputDefineText">Select product category: <span class="steric">*</span></label>
+            <select name="proCategory" id="proCategory">
+                <option value="watch">watch</option>
+                <option value="perfume">perfume</option>
+                <option value="airpods">airpods</option>
+            </select>
+        </div>
+
+        <div>
+            <label class="inputDefineText" for="brand">Enter brand name: <span class="steric">*</span></label>
+            <input type="text" name="brand" id="brand" placeholder="Brand name">
+        </div>
+
+        <div>
+            <label class="inputDefineText">Upload an image here: <span class="steric">*</span></label>
+            <label for="proImg" class="custom-file-upload">Upload a product image</label>
+            <input type="file" name="proImg" id="proImg">
+        </div>
+
+        <div>
+            <label class="inputDefineText">Set product price: <span class="steric">*</span></label>
+            <input type="number" name="proPrice" id="proPrice" placeholder="Set price">
+        </div>
+
+        <div>
+            <label class="inputDefineText">Set available Quantity: <span class="steric">*</span></label>
+            <input type="number" name="proQuantity" id="proQuantity" placeholder="Available Quantity">
+        </div>
+
+        <div>
+            <label class="inputDefineText">Write some description...: <span class="steric">*</span></label>
+            <textarea name="description" id="description" placeholder="Write some description..."></textarea>
+        </div>
+
+        <div id="uploadBtn" onClick="addProduct()">
+            List Product
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
